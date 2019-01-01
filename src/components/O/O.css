@@ -1,0 +1,26 @@
+.O {
+  height: 100px;
+  width: 200px;
+  background-color: #25201D;
+  border-radius: 100px / 50px;
+  position: relative;   /*オレオの模様のために相対位置を設定*/
+  border: solid #68605E 0.5px;
+}
+.pattern {
+  height: 75px;
+  width: 170px;
+  border-radius: 130px / 60px;
+  border: dashed #68605E;
+
+  position: absolute;
+  top: 3px;
+  left: 12px;
+
+  color: #68605E;
+  text-align: center;
+
+  font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+  font-size: 25px;
+  font-weight: 450;
+  line-height: 65px;
+}

@@ -1,0 +1,19 @@
+.Re{
+  border: solid #68605E 2.5px;
+  height: 80px;
+  width: 160px;
+  border-radius: 100px / 50px;
+  position: relative;   /*オレオの模様のために相対位置を設定*/
+  left: 20px;
+  background-color: #f0f8ff;
+}
+.shadow {
+  height: 55px;
+  width: 120px;
+  border-radius: 100px / 50px;
+  border-right: solid rgb(109, 96, 94, 0.3) 2px;
+
+  position: absolute;
+  top: 7px;
+  right: 15px;
+}
