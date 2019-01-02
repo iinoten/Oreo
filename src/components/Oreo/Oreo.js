@@ -12,9 +12,6 @@ class Oreo extends Component{
   }
   
   onInputChangeHandler = (event) => {
-    if(event.target.value === "Hello"){
-      console.log("Wolrd");
-    }
     if ( event.target.value.slice(-1) === "オ" ) {
       this.setState({
         oreo: this.state.oreo.concat(<O load={this.state.load.toString()} />)
@@ -31,8 +28,11 @@ class Oreo extends Component{
         load: this.state.load + 1
       });
     }
-    console.log(this.state.oreo);
-  }
+    var last_Chara = event.target.value.slice(-1);
+    if ( (last_Chara!=="お")&&(last_Chara!=="れ")&&(last_Chara!=="ｒ") ) {
+      event.target.value = event.target.value.slice(0, -1);
+    }
+   }
   render(){
     return(
         <div>
