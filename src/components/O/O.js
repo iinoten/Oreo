@@ -8,7 +8,6 @@ class O extends Component{
       zIndex: "-" + this.props.load,
       bottom: this.props.load * 70
     }
-    console.log(style.zIndex);
     return(
       <div>
         <div className="O" style={style}><div className="pattern">OREO</div></div>
