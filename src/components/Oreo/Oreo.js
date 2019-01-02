@@ -7,19 +7,30 @@ import Re from '../Re/Re';
 
 class Oreo extends Component{
   state = {
-    str: [],
+    load: 0,
     oreo: []
   }
   
   onInputChangeHandler = (event) => {
-    var Array = this.state.oreo;
-    console.log(Array);
     if(event.target.value === "Hello"){
       console.log("Wolrd");
     }
-    this.setState({
-      oreo: this.state.oreo.concat(<O />)
-    });
+    if ( event.target.value.slice(-1) === "オ" ) {
+      this.setState({
+        oreo: this.state.oreo.concat(<O load={this.state.load.toString()} />)
+      });
+      this.setState({
+        load: this.state.load + 1
+      });
+    }
+    if ( event.target.value.slice(-1) === "レ" ) {
+      this.setState({
+        oreo: this.state.oreo.concat(<Re load={this.state.load.toString()} />)
+      });
+      this.setState({
+        load: this.state.load + 1
+      });
+    }
     console.log(this.state.oreo);
   }
   render(){
