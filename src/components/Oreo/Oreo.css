@@ -1,0 +1,36 @@
+html{
+  background-color: #81d2c7;
+}
+
+.oreo {
+  height: 60vh;
+  overflow:hidden;
+  margin: 5px 20vw 20px 20vw;
+  border: solid #36558f 5px;
+  padding: 5px 2px;
+}
+.oreoForm{
+  clear: left;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 80px;
+  font-size: 40px;
+  width: 40px;
+  border: solid #36558f;
+  border-radius: 7px;
+  margin-top: 50px;
+}
+/*
+.sweets{
+  float: left;
+  margin-left: 40vw;
+}
+*/
+.title{
+  color: #36558f;
+  font-size: 60px;
+  text-align: center;
+  font-weight: 700;
+  padding-top: 10px;
+}
