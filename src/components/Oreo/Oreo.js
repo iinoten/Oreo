@@ -46,6 +46,7 @@ class Oreo extends Component{
           </div>
           </div>
         <input className="oreoForm" onChange={this.onInputChangeHandler} />
+        <h4>v0.1</h4>
       </div>
     );
   }

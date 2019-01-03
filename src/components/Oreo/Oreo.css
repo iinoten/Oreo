@@ -14,12 +14,12 @@ html{
   display: block;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 80px;
   font-size: 40px;
   width: 40px;
   border: solid #36558f;
   border-radius: 7px;
-  margin-top: 50px;
+  margin-top: 20px;
+  background-color: #e0e0e2;
 }
 /*
 .sweets{
@@ -33,4 +33,12 @@ html{
   text-align: center;
   font-weight: 700;
   padding-top: 10px;
+}
+h4 {
+  text-align: right;
+  margin-right: 20vw;
+  color: #fe5d26;
+  border-bottom:solid #fe5d26;
+  display: inline-block;
+  margin-left: 80vw;
 }
