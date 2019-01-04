@@ -9,7 +9,7 @@ class Oreo extends Component{
   state = {
     load: 0,
     oreo: [],
-    height:0
+    oreo_result:"　"
   }
   
   onInputChangeHandler = (event) => {
@@ -18,7 +18,8 @@ class Oreo extends Component{
         oreo: this.state.oreo.concat(<O className="o" load={this.state.load.toString()} />)
       });
       this.setState({
-        load: this.state.load + 1
+        load: this.state.load + 1,
+        oreo_result: this.state.oreo_result + "オ"
       });
     }
     if ( event.target.value.slice(-1) === "レ" ) {
@@ -26,7 +27,8 @@ class Oreo extends Component{
         oreo: this.state.oreo.concat(<Re className="re" load={this.state.load.toString()} />)
       });
       this.setState({
-        load: this.state.load + 1
+        load: this.state.load + 1,
+        oreo_result: this.state.oreo_result + "レ"
       });
     }
     var last_Chara = event.target.value.slice(-1);
@@ -45,8 +47,10 @@ class Oreo extends Component{
             }
           </div>
           </div>
+          <marquee className="result">{this.state.oreo_result}</marquee>
         <input className="oreoForm" onChange={this.onInputChangeHandler} />
-        <h4>v0.1</h4>
+        <h4>v1.0</h4>
+        <div className="share-button"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" className="twitter-share-button" data-size="large" data-text="OREO:makerでオレオを作りました" data-url="https://oreo-f8d0f.firebaseapp.com/" data-hashtags="oreomaker" data-related="ntenten_Q" data-lang="en" data-show-count="false">Tweet</a></div>
       </div>
     );
   }
