@@ -5,12 +5,12 @@ import Oreo from './components/Oreo/Oreo';
  
 class App extends Component {
   componentWillMount(){
-    console.log(window.screen.width);
+    console.log(window.screen.height);
   }
   render() {
     return (
       <div className="App">
-        <Oreo width={window.screen.width}/>
+        <Oreo height={window.screen.height}/>
       </div>
     );
   }
