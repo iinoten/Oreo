@@ -40,7 +40,7 @@ class Oreo extends Component{
     return(
         <div>
           <div className="title">OREO:maker</div>
-          <div className="oreo">
+          <div className="oreo" style={{width:this.props.width.toString() * 0.6 +"px"}}>
           <div className="sweets">
             { this.state.oreo.map((item, i) => 
                 <React.Fragment key={i}><div>{item}</div></React.Fragment>) 

@@ -4,10 +4,13 @@ import React, { Component } from 'react';
 import Oreo from './components/Oreo/Oreo';
  
 class App extends Component {
+  componentWillMount(){
+    console.log(window.screen.width);
+  }
   render() {
     return (
       <div className="App">
-        <Oreo />
+        <Oreo width={window.screen.width}/>
       </div>
     );
   }
