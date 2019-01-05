@@ -3,7 +3,6 @@ html{
 }
 
 .oreo {
-  height: 60vh;
   overflow:hidden;
   margin: 5px 20vw 20px 20vw;
   border: solid #36558f 5px;
@@ -21,12 +20,6 @@ html{
   margin-top: 5px;
   background-color: #e0e0e2;
 }
-/*
-.sweets{
-  float: left;
-  margin-left: 40vw;
-}
-*/
 .title{
   color: #36558f;
   font-size: 40px;

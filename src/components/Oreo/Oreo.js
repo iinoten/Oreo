@@ -49,7 +49,7 @@ class Oreo extends Component{
           </div>
           <marquee className="result">{this.state.oreo_result}</marquee>
         <input className="oreoForm" onChange={this.onInputChangeHandler} />
-        <h4>v1.0</h4>
+        <h4>v1.1</h4>
         <div className="share-button"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" className="twitter-share-button" data-size="large" data-text="OREO:makerでオレオを作りました" data-url="https://oreo-f8d0f.firebaseapp.com/" data-hashtags="oreomaker" data-related="ntenten_Q" data-lang="en" data-show-count="false">Tweet</a></div>
       </div>
     );
