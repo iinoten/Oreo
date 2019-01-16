@@ -32,7 +32,7 @@ class Oreo extends Component{
       });
     }
     var last_Chara = event.target.value.slice(-1);
-    if ( (last_Chara!=="お")&&(last_Chara!=="れ")&&(last_Chara!=="ｒ") ) {
+    if ( (last_Chara!=="お")&&(last_Chara!=="れ")&&(last_Chara!=="ｒ")&&(last_Chara!=="r") ) {
       event.target.value = "";
     }
    }
